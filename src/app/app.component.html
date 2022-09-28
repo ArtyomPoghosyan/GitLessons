@@ -1,0 +1,17 @@
+<!-- <div *ngFor="let item of obj | async " >
+
+{{item.id}}
+  
+</div> -->
+
+<div *ngFor="let item of array;trackBy:trackByIDs">
+   trackBy: {{item.id}}
+</div>
+
+<button (click)="add()">Add</button>
+master class
+<form [formGroup]="form">
+    <input type ="text"  formControlName="email"/>
+    <input type ="text"  formControlName="password"/>
+</form>
+<button (click)="login()">Login</button>
